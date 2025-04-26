@@ -17,15 +17,26 @@ def execute_monty_hall(times : int):
         if game_result:
             change_door_win_counter += 1
 
-    return "El participante ganó el auto sin cambio de puerta" + " " + str(not_change_door_win_counter) + " " + "veces" + " "  + "y" + " " + "el participante ganó el auto con cambio de puerta" + " " + str(change_door_win_counter) + " " + "veces"
+    return "El algoritmo se ejecutó" + " " + str(times) + " " + "veces" + "," + " " + "el participante ganó el auto sin cambio de puerta" + " " + str(not_change_door_win_counter) + " " + "veces" + " "  + "y" + " " + "el participante ganó el auto con cambio de puerta" + " " + str(change_door_win_counter) + " " + "veces"
 
-#1000 veces
-#print(execute_monty_hall(1000))
+#Menu interactivo para poder ejecutar el algoritmo.
+print("Bienvenido a Monty Hall, a continuación elija la cantidad de veces que quiere ejecutar el algoritmo")
+print("Escriba 1 si quiere ejecutar el algoritmo 1000 veces, 2 si quiere ejecutarlo 10000 veces o 3 si quiere ejecutarlo 100000 veces")
 
-#10000 veces
-#print(execute_monty_hall(10000))
+response = int(input())
 
-#100000 veces
-#print(execute_monty_hall(100000))
+posible_responses = [1, 2, 3]
 
+while response not in posible_responses:
+    print("Debe seleccionar una respuesta válida")
+    response = int(input())
 
+if response == 1:
+    #1000 veces
+    print(execute_monty_hall(1000))
+elif response == 2:
+    #10000 veces
+    print(execute_monty_hall(10000))
+elif response == 3:
+    #100000 veces
+    print(execute_monty_hall(100000))

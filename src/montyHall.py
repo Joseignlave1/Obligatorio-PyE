@@ -5,11 +5,6 @@ def monty_hall(door_change : bool) -> bool:
     monty_posible_open_doors =["puerta1", "puerta2", "puerta3"]
     winner_door = secrets.choice(selected_doors)
     selected_door = secrets.choice(selected_doors)
-
-
-    door1 = "puerta1"
-    door2 = "puerta2"
-    door3 = "puerta3"
     #El participante no cambia de puerta
     if not door_change:
         if selected_door == winner_door:
@@ -20,7 +15,6 @@ def monty_hall(door_change : bool) -> bool:
             print("El participante gana el auto")
             win = True
         else:
-
             print("El participante elige" + " " + selected_door)
             monty_posible_open_doors.remove(selected_door)
             monty_posible_open_doors.remove(winner_door)
