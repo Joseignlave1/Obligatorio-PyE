@@ -1,4 +1,5 @@
 from src.montyHall import monty_hall
+from src.illnessProblem import disease_test_simulation
 
 #MontyHall
 def execute_monty_hall(times : int):
@@ -40,3 +41,7 @@ elif response == 2:
 elif response == 3:
     #100000 veces
     print(execute_monty_hall(100000))
+
+#illness problem
+
+disease_test_simulation()
