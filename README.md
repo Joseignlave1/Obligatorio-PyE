@@ -1,4 +1,4 @@
-# Hola!, les dejo estas instrucciones para que puedan correr el proyecto en Visual Studio Code y ya les quede para que puedan correr los otros proyectos!
+# Hola!, les dejamos estas instrucciones para que puedan correr el proyecto en Visual Studio Code y ya les quede para que puedan correr los otros proyectos!
 
 ## 1. Instalar
 
