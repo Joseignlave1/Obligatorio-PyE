@@ -25,7 +25,7 @@
 
 ## 5. Ejecutar el archivo
 
-- Abrir el archivo `.py` que quieras correr (por ejemplo, `montyhall.py` o `enfermedad.py`).
+- Abrir el archivo `.py` que quieras correr (`main.py`, ahi se encuentra el menu interactivo).
 - Hacer clic en el botón **Run** (o **Ejecutar**) que aparece en la parte superior.
 
 ---
